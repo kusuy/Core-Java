@@ -3,7 +3,7 @@ package day5;
 
 import java.util.Scanner;
 
-public class While5 {
+public class While6 {
 	
 	public static void main(String[] args) {
 		int n;
@@ -21,8 +21,11 @@ public class While5 {
 			
 			i = i / 10;
 		}
-		
-		System.out.println("Value of n = "+n+", Reverse = "+reverse);
+		if(reverse == n) {
+			System.out.println("Number = "+n +" is a palindrome");
+		}else {
+			System.out.println("Number = "+n+" is not a palindroem, Since reverse = "+reverse);
+		}
 	}
 
 }
